@@ -28,16 +28,39 @@ main div {
 #explore {
   color: black;
   background-color: rgba(255, 255, 255, 0.952);
-  padding: 6rem;
+  padding: 7.5rem 4.7rem;
   width: auto;
   border: 2px dashed white;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 200px;
-  border-top-left-radius: 150px;
-  border-top-right-radius: 10px;
+  border-radius: 255px;
   text-align: center;
   vertical-align: middle;
   font-family: "Bellefair";
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-weight: 900;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 80rem) {
+  body {
+    background: url(/IMAGES/home/background-home-tablet.jpg);
+  }
+
+  main {
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+
+  main div {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 45rem) {
+  body {
+    background: url(/IMAGES/home/background-home-mobile.jpg);
+  }
+  main div {
+    width: 80%;
+  }
 }

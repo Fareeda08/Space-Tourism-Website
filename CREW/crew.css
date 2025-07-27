@@ -1,0 +1,95 @@
+body {
+  background: url(../IMAGES/crew/background-crew-desktop.jpg);
+}
+
+main {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main div {
+  width: 35%;
+}
+
+.crew-position {
+  color: white;
+  font-family: "Bellefair";
+  letter-spacing: 3px;
+  opacity: 50.42%;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.crew-name {
+  font-family: "Bellefair";
+  font-size: 3.4rem;
+  margin: 0;
+}
+
+.about-crew {
+  color: white;
+  opacity: 50.42%;
+  line-height: 29px;
+  font-family: "Barlow";
+  letter-spacing: 0.1px;
+}
+
+.next {
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 7rem;
+  margin-left: -1rem;
+}
+
+.next button {
+  padding: 0.3rem;
+  border: 1px solid white;
+  border-radius: 55px;
+  margin: 0 1.2rem;
+  opacity: 30%;
+}
+
+#current-crew {
+  opacity: 100%;
+}
+
+@media (max-width: 60rem) {
+  main {
+    flex-direction: column;
+  }
+
+  main div {
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .next {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  main img {
+    width: 60%;
+  }
+}
+
+.PILOT,
+.MISSION-SPECIALIST,
+.FLIGHT-ENGINEER {
+  display: none;
+}
+
+.previous-crew {
+  display: none;
+}
+
+.chosen-crew {
+  display: flex;
+}

@@ -1,5 +1,5 @@
 body {
-  background: url(/IMAGES/crew/background-crew-desktop.jpg);
+  background: url(../IMAGES/crew/background-crew-desktop.jpg);
 }
 
 main {
@@ -55,4 +55,41 @@ main div {
 
 #current-crew {
   opacity: 100%;
+}
+
+@media (max-width: 60rem) {
+  main {
+    flex-direction: column;
+  }
+
+  main div {
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .next {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  main img {
+    width: 60%;
+  }
+}
+
+.PILOT,
+.MISSION-SPECIALIST,
+.FLIGHT-ENGINEER {
+  display: none;
+}
+
+.previous-crew {
+  display: none;
+}
+
+.chosen-crew {
+  display: flex;
 }
